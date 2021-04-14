@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://layout-hoc/./exec/index.tsx"],"names":[],"mappings":";;;;;;;;;;;AAEA,OAAO,CAAC,GAAG,CAAC,KAAK,CAAC","file":"bundle.js","sourcesContent":["import React from 'react'\r\n\r\nconsole.log('Hey')\r\n\r\n"],"sourceRoot":""}
