@@ -1,9 +1,7 @@
 import React from 'react'
 
-type TextColors = "white" | "black"
-
 type Props = {
-    color: TextColors
+    color: string
     children: React.ReactNode
 }
 

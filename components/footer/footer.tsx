@@ -1,11 +1,12 @@
 import React from 'react'
 import { Text } from '../'
+import useTheme from '../use-theme'
 
-export const Footer = () => {
+const Footer = () => {
     const theme = useTheme()
     return (
         <div className="footer">
-            <Text color={theme.color}>Footer</Text>
+            <Text color={theme.text}>Footer</Text>
             <styled jsx>{`
                 .footer {
                     
@@ -14,3 +15,5 @@ export const Footer = () => {
         </div>
     )
 }
+
+export default Footer

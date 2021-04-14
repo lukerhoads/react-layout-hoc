@@ -1,7 +1,7 @@
 import React from 'react'
 import { Header, Search, ContentWrapper, Footer } from '../../components'
 
-export const ElementSearch = () => {
+const ElementSearch = () => {
     return (
         <>
             <Header />
@@ -11,3 +11,5 @@ export const ElementSearch = () => {
         </>
     )
 }
+
+export default ElementSearch

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Text } from '../'
 
-export const ContentWrapper = () => {
+const ContentWrapper = () => {
     const theme = useTheme()
     return (
         <div className="content-wrapper">
@@ -14,3 +14,5 @@ export const ContentWrapper = () => {
         </div>
     )
 }
+
+export default ContentWrapper

@@ -1,11 +1,12 @@
 import React from 'react'
 import { Text } from '../'
+import useTheme from '../use-theme'
 
-export const Sidebar = () => {
+const Sidebar = () => {
     const theme = useTheme()
     return (
         <div className="sidebar">
-            <Text color={theme.color}>Sidebar</Text>
+            <Text color={theme.text}>Sidebar</Text>
             <styled jsx>{`
                 .sidebar {
                     
@@ -14,3 +15,5 @@ export const Sidebar = () => {
         </div>
     )
 }
+
+export default Sidebar

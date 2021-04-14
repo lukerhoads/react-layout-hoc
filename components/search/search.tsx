@@ -1,19 +1,19 @@
 import React from 'react'
 import { Text } from '../'
+import useTheme from '../use-theme'
 
-
-export const Sidebar = () => {
+const Sidebar = () => {
     const theme = useTheme()
     return (
         <div className="search">
-            <Text color={theme.color}>Search</Text>
+            <Text color={theme.text}>Search</Text>
             <styled jsx>{`
                 .search {
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     background-color: ${theme.background};
-                    border: 1px solid ${theme.border};
+                    border: 1px solid ${theme.outline};
                     height: 800px;
                 }
 
@@ -26,3 +26,5 @@ export const Sidebar = () => {
         </div>
     )
 }
+
+export default Sidebar;

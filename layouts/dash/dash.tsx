@@ -1,7 +1,7 @@
 import React from 'react'
 import { DashHeader, Sidebar, ContentWrapper } from '../../components'
 
-export const Dash = () => {
+const Dash = () => {
     // Need store provider
     return (
         <> 
@@ -13,3 +13,5 @@ export const Dash = () => {
         </>
     )
 }
+
+export default Dash

@@ -1,3 +1,5 @@
-export { default as ElementSearch } from './element-search/element-search'
+import Dash from './dash/dash'
 
-export { default as Dash } from './dash/dash'
+import ElementSearch from './element-search/element-search'
+
+export { Dash, ElementSearch }

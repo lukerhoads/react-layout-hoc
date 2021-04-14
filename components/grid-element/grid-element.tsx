@@ -1,11 +1,12 @@
 import React from 'react'
 import { Text } from '../'
+import useTheme from '../use-theme'
 
-export const GridElement = () => {
+const GridElement = () => {
     const theme = useTheme()
     return (
         <div className="grid-element">
-            <Text color={theme.color}>GridElement</Text>
+            <Text color={theme.text}>GridElement</Text>
             <styled jsx>{`
                 .grid-element {
                     
@@ -14,3 +15,5 @@ export const GridElement = () => {
         </div>
     )
 }
+
+export default GridElement
