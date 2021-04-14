@@ -1,0 +1,20 @@
+{
+  "name": "layout-hoc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukerhoads/react-layout-hoc.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lukerhoads/react-layout-hoc/issues"
+  },
+  "homepage": "https://github.com/lukerhoads/react-layout-hoc#readme"
+}
