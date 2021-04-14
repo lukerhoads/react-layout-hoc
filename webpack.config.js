@@ -1,11 +1,9 @@
 const webpack = require('webpack')
-const failPlugin = require('webpack-fail-plugin')
-const tslint = require('tslint-loader')
+const path = require('path')
 
 const isProd = process.env.NODE_ENV === 'production'
 var prodPlugins = []
 
-//plugins that are only used for prod builds
 if (isProd) {
   console.log("Building prod version...")
   prodPlugins = [
@@ -14,32 +12,19 @@ if (isProd) {
 }
 
 module.exports = {
-  entry: './main.ts',
+  mode: "development",
+  entry: './exec/index.tsx',
   output: {
-    filename: './dist/main.js'
+    path: path.resolve(__dirname, "dist"),
+    filename: "bundle.js",
   },
   devtool: 'source-map',
   resolve: {
-    extensions: ['.ts', '.js', '.tsx', '.jsx']
+    extensions: ['.ts', '.js', '.tsx', '.jsx', '.json']
   },
-  plugins: [
-    failPlugin
-  ].concat(prodPlugins),
   module: {
-    loaders: [
-      { test: /\.ts$/, loader: 'ts-loader' },
-      { test: /\.(eot|svg|ttf|woff|woff2)$/, loader: 'file?name=dist/fonts/[name].[ext]'}, // Fonts
-      { test: /\.(jpg|png|svg)$/, loader: 'file?name=dist/images/[name].[ext]'} // Images
+    rules: [
+      { test: /\.(ts|tsx)$/, loader: 'ts-loader' },
     ],
-    preLoaders: [
-      {
-        test: /\.ts$/,
-        loader: "tslint"
-      }
-    ]
   },
-  tslint: {
-    emitErrors: true,
-    failOnHint: true
-  }
 }
