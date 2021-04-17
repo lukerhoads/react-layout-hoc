@@ -1,4 +1,4 @@
-import Theme from "../type"
+import Theme from "./type"
 
 const Palette: Theme = {
     background: "#fff",

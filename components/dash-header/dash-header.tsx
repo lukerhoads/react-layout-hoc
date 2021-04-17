@@ -7,16 +7,14 @@ const DashHeader = () => {
     return (
         <div className="dash-header">
             <Text color={theme.text}>DashHeader</Text>
-            <styled jsx>{`
+            <style jsx>{`
                 .dash-header {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                    width: 100%;
                     position: fixed;
                     height: 60px;
                     background-color: ${theme.background};
                 }
-            `}</styled>
+            `}</style>
         </div>
     )
 }

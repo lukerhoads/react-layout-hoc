@@ -7,7 +7,7 @@ const Sidebar = () => {
     return (
         <div className="search">
             <Text color={theme.text}>Search</Text>
-            <styled jsx>{`
+            <style jsx>{`
                 .search {
                     display: flex;
                     align-items: center;
@@ -22,7 +22,7 @@ const Sidebar = () => {
                         height: 600px;
                     }
                 }
-            `}</styled>
+            `}</style>
         </div>
     )
 }

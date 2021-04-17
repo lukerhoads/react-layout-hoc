@@ -7,11 +7,11 @@ const GridElement = () => {
     return (
         <div className="grid-element">
             <Text color={theme.text}>GridElement</Text>
-            <styled jsx>{`
+            <style jsx>{`
                 .grid-element {
                     
                 }
-            `}</styled>
+            `}</style>
         </div>
     )
 }

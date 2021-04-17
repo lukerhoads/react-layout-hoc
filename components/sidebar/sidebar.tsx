@@ -7,11 +7,11 @@ const Sidebar = () => {
     return (
         <div className="sidebar">
             <Text color={theme.text}>Sidebar</Text>
-            <styled jsx>{`
+            <style jsx>{`
                 .sidebar {
-                    
+                    width: 
                 }
-            `}</styled>
+            `}</style>
         </div>
     )
 }

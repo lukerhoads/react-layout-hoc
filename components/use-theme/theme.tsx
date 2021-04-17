@@ -1,6 +1,5 @@
-import Theme from './type'
+import Theme from './themes/type'
 import lightTheme from './themes/light'
-import darkTheme from './themes/dark'
 
 const getPresetStaticTheme = (): Theme => {
   return lightTheme

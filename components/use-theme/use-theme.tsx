@@ -1,6 +1,6 @@
 import React from 'react'
 import Themes from './theme'
-import Theme from './type'
+import Theme from './themes/type'
 
 const defaultTheme = Themes.getPresetStaticTheme()
 

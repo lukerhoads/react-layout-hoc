@@ -7,11 +7,11 @@ const Footer = () => {
     return (
         <div className="footer">
             <Text color={theme.text}>Footer</Text>
-            <styled jsx>{`
+            <style jsx>{`
                 .footer {
                     
                 }
-            `}</styled>
+            `}</style>
         </div>
     )
 }

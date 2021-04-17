@@ -7,7 +7,7 @@ const Header = () => {
     return (
         <div className="header">
             <Text color={theme.text}>Header</Text>
-            <styled jsx>{`
+            <style jsx>{`
                 .header {
                     display: flex;
                     align-items: center;
@@ -16,7 +16,7 @@ const Header = () => {
                     height: 67px;
                     background-color: ${theme.background};
                 }
-            `}</styled>
+            `}</style>
         </div>
     )
 }
