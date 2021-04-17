@@ -1,19 +1,23 @@
 import React from 'react'
 import { Text } from '../'
 import useTheme from '../use-theme'
+import { useAtom } from 'jotai'
+import { appAtom } from '../../store/store'
 
 const Header = () => {
     const theme = useTheme()
+    const [app, setApp] = useAtom(appAtom)
+
     return (
         <div className="header">
-            <Text color={theme.text}>Header</Text>
+            <Text color={theme.text}>{app.name}</Text>
             <style jsx>{`
                 .header {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                    width: 100%;
+                    height: 80px;
                     position: fixed;
-                    height: 67px;
+                    box-sizing: border-box;
+                    z-index: 1001;
                     background-color: ${theme.background};
                 }
             `}</style>

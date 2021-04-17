@@ -11,6 +11,7 @@ const Text = ({ color, children }: Props) => {
             {children}
             <style jsx>{`
                 p {
+                    margin: 0;
                     color: ${color}
                 }
             `}</style>

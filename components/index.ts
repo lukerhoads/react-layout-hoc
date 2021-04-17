@@ -1,4 +1,4 @@
-export { default as ContentWrapper } from './content-wrapper/content-wrapper'
+export { default as Content } from './content/content'
 
 export { default as Footer } from './footer/footer'
 
@@ -13,3 +13,5 @@ export { default as Text } from './text/text'
 export { default as Sidebar } from './sidebar/sidebar'
 
 export { default as DashHeader } from './dash-header/dash-header'
+
+export { default as DashWrapper } from './dash-wrapper/dash-wrapper'

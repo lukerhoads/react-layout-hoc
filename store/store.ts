@@ -4,6 +4,6 @@ interface AppStore {
     name: string
 }
 
-const appAtom = atom({
+export const appAtom = atom({
     name: "HOC"
 })

@@ -10,9 +10,13 @@ const DashHeader = () => {
             <style jsx>{`
                 .dash-header {
                     width: 100%;
+                    height: 64px;
+                    min-width: 320px;W
                     position: fixed;
-                    height: 60px;
+                    box-sizing: border-box;
+                    z-index: 1001;
                     background-color: ${theme.background};
+                    border: 1px solid black;
                 }
             `}</style>
         </div>
