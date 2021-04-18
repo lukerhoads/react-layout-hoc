@@ -11,15 +11,14 @@ const Header = () => {
     return (
         <div className="header">
             <Text color={theme.text}>{app.name}</Text>
-            <button onClick={}>Switch Theme</button>
+            <button>Switch Theme</button>
             <style jsx>{`
                 .header {
                     width: 100%;
                     height: 80px;
-                    position: fixed;
                     box-sizing: border-box;
-                    z-index: 1001;
                     background-color: ${theme.background};
+                    border: 1px solid ${theme.outline};
                 }
             `}</style>
         </div>

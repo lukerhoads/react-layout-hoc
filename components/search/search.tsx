@@ -9,14 +9,14 @@ const Search = () => {
             <Text color={theme.text}>Search</Text>
             <style jsx>{`
                 .search {
-                    height: 500px;
+                    height: 400px;
                     background-color: ${theme.background};
                     border: 1px solid ${theme.outline};
                 }
 
                 @media (max-width: 800px) {
                     .search {
-                        height: 700px;
+                        height: 500px;
                     }
                 }
             `}</style>

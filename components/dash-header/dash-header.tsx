@@ -11,7 +11,7 @@ const DashHeader = () => {
     return (
         <div className="dash-header">
             <Text color={theme.text}>{app.name}</Text>
-            <button onClick={}>Switch Theme</button>
+            <button>Switch Theme</button>
             <style jsx>{`
                 .dash-header {
                     width: 100%;

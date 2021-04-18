@@ -9,14 +9,8 @@ const SearchContent = () => {
             <Text color={theme.text}>Search Content</Text>
             <style jsx>{`
                 .content-wrapper {
-                    width: 80%;
+                    width: 100%;
                     border: 1px solid ${theme.outline};
-                }
-
-                @media (max-width: 800px) {
-                    .content-wrapper {
-                        width: 100%;
-                    }
                 }
             `}</style>
         </div>

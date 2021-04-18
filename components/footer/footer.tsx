@@ -10,9 +10,9 @@ const Footer = () => {
             <style jsx>{`
                 .footer {
                     width: 100%;
-                    height: 80px;  
-                    bottom: 0;  
+                    height: 100px;  
                     background-color: ${theme.background};
+                    border: 1px solid ${theme.outline};
                 }
             `}</style>
         </div>
