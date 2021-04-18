@@ -1,12 +1,17 @@
 import React from 'react'
 import { Text } from '../'
 import useTheme from '../use-theme'
+import { useAtom } from 'jotai'
+import { appAtom } from '../../store/store'
 
 const DashHeader = () => {
     const theme = useTheme()
+    const [app, setApp] = useAtom(appAtom)
+
     return (
         <div className="dash-header">
-            <Text color={theme.text}>DashHeader</Text>
+            <Text color={theme.text}>{app.name}</Text>
+            <button onClick={}>Switch Theme</button>
             <style jsx>{`
                 .dash-header {
                     width: 100%;
