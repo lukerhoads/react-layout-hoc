@@ -1,11 +1,15 @@
 import React from 'react'
-import Themes from './theme'
-import Theme from './themes/type'
+import ThemeType from './themes/type'
+import lightTheme from './themes/light'
 
-const defaultTheme = Themes.getPresetStaticTheme()
+export const getPresetStaticTheme = (): ThemeType => {
+  return lightTheme
+}
 
-export const ThemeContext: React.Context<Theme> = React.createContext<Theme>(
+const defaultTheme = getPresetStaticTheme()
+
+export const ThemeContext: React.Context<ThemeType> = React.createContext<ThemeType>(
   defaultTheme,
 )
 
-export const useTheme = (): Theme => React.useContext<Theme>(ThemeContext)
+export const useTheme = (): ThemeType => React.useContext<ThemeType>(ThemeContext)

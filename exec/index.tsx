@@ -1,5 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { CssBaseline, ThemeProvider } from '../components'
 import { Dash, ElementSearch } from '../layouts'
 
-ReactDOM.render(<ElementSearch />, document.getElementById("root"))
+ReactDOM.render(
+    <ThemeProvider themeType="light">
+        <CssBaseline />
+        <ElementSearch />
+    </ThemeProvider>, 
+    document.getElementById("root")
+)

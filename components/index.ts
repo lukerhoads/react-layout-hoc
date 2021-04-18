@@ -17,3 +17,9 @@ export { default as DashHeader } from './dash-header/dash-header'
 export { default as DashWrapper } from './dash-wrapper/dash-wrapper'
 
 export { default as SearchContent } from './search-content/search-content'
+
+export { default as CssBaseline } from './css-baseline/css-baseline'
+
+export { default as ThemeProvider } from './theme-provider/theme-provider'
+
+
