@@ -1,5 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Dash } from '../layouts'
+import { Dash, ElementSearch } from '../layouts'
 
-ReactDOM.render(<Dash />, document.getElementById("root"))
+ReactDOM.render(<ElementSearch />, document.getElementById("root"))

@@ -14,7 +14,7 @@ const Content = () => {
                     position: fixed;
                     right: 0;
                     z-index: 1000;
-                    border: 1px solid black;
+                    border: 1px solid ${theme.outline};
                 }
 
                 @media (max-width: 800px) {

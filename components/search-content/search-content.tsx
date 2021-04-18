@@ -2,21 +2,20 @@ import React from 'react'
 import { Text } from '../'
 import useTheme from '../use-theme'
 
-const Search = () => {
+const SearchContent = () => {
     const theme = useTheme()
     return (
-        <div className="search">
-            <Text color={theme.text}>Search</Text>
+        <div className="content-wrapper">
+            <Text color={theme.text}>Search Content</Text>
             <style jsx>{`
-                .search {
-                    height: 500px;
-                    background-color: ${theme.background};
+                .content-wrapper {
+                    width: 80%;
                     border: 1px solid ${theme.outline};
                 }
 
                 @media (max-width: 800px) {
-                    .search {
-                        height: 700px;
+                    .content-wrapper {
+                        width: 100%;
                     }
                 }
             `}</style>
@@ -24,4 +23,4 @@ const Search = () => {
     )
 }
 
-export default Search;
+export default SearchContent

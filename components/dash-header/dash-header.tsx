@@ -16,7 +16,7 @@ const DashHeader = () => {
                     box-sizing: border-box;
                     z-index: 1001;
                     background-color: ${theme.background};
-                    border: 1px solid black;
+                    border: 1px solid ${theme.outline};
                 }
             `}</style>
         </div>

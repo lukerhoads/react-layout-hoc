@@ -9,7 +9,10 @@ const Footer = () => {
             <Text color={theme.text}>Footer</Text>
             <style jsx>{`
                 .footer {
-                    
+                    width: 100%;
+                    height: 80px;  
+                    bottom: 0;  
+                    background-color: ${theme.background};
                 }
             `}</style>
         </div>

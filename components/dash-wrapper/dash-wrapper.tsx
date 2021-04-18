@@ -1,6 +1,9 @@
 import React from 'react'
+import useTheme from '../use-theme';
 
 const DashWrapper = ({ children }: { children: React.ReactNode }) => {
+    const theme = useTheme()
+    
     return (
         <div className="dash-wrapper">
             {children}
@@ -11,7 +14,7 @@ const DashWrapper = ({ children }: { children: React.ReactNode }) => {
                     margin: 0;
                     padding: 0;
                     display: flex;
-                    border: 1px solid black;
+                    border: 1px solid ${theme.outline};
                 }
 
                 @media (max-width: 800px) {

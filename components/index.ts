@@ -15,3 +15,5 @@ export { default as Sidebar } from './sidebar/sidebar'
 export { default as DashHeader } from './dash-header/dash-header'
 
 export { default as DashWrapper } from './dash-wrapper/dash-wrapper'
+
+export { default as SearchContent } from './search-content/search-content'

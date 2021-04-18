@@ -1,12 +1,12 @@
 import React from 'react'
-import { Header, Search, Content, Footer } from '../../components'
+import { Header, Search, Footer, SearchContent } from '../../components'
 
 const ElementSearch = () => {
     return (
         <>
             <Header />
             <Search />
-            <Content />
+            <SearchContent />
             <Footer />
         </>
     )
