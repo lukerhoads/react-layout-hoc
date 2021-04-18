@@ -11,6 +11,7 @@ const Header = () => {
     return (
         <div className="header">
             <Text color={theme.text}>{app.name}</Text>
+            <button onClick={}>Switch Theme</button>
             <style jsx>{`
                 .header {
                     width: 100%;
